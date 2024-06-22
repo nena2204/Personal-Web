@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.161/build/three.module.js",
+                "jsm/": "https://cdn.jsdelivr.net/npm/three@0.161/examples/jsm/"
+            }
+        }
+    </script>
+    <style>
+        .contact-section{
+            display: flex;
+            justify-content: space-around;
+        }
+        .forms {
+            background-color: #ffcccb;
+            padding: 33px;
+            border-radius: 10px;
+            width: 300px;
+            margin: auto;
+        }
+
+        .forms h2 {
+            font-family: "Playwrite NZ", cursive;
+            text-align: center;
+            color: white;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ffe6e6;
+            font-family: sans-serif;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"] {
+            height: 40px;
+        }
+
+        .form-group textarea {
+            height: 100px;
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #00bcd4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-family: sans-serif;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background-color: #0097a7;
+        }
+
+        .social-icons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            margin: 0 10px;
+            background-size: cover;
+        }
+
+        .social-icons a.instagram {
+            background-image: url('assets/instagramm.png');
+        }
+
+        .social-icons a.facebook {
+            background-image: url('assets/facebook.png');
+        }
+
+        .social-icons a.linkedin {
+            background-image: url('assets/linkedin.png');
+        }
+        .social-icons a:hover{
+            width: 60px;
+            height: 60px;
+            transition: 1s;
+        }
+        .container {
+            width: 50%;
+            height: 80vh;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <span id="naslovche">Contact</span>
+    <nav>
+        <ul>
+            <li><a href="aboutme.html">Home</a></li>
+            <li><a href="biography.html">About</a></li>
+            <li><a href="projects.html">Travels</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<section>
+    <div class="contact-section">
+        <div class="forms">
+            <h2>Contact Me</h2>
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <textarea name="message" placeholder="Message"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Send Message</button>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/nikolovanenaa?igsh=NTM1cTExaTQ0a3c5" target="_blank" class="instagram"></a>
+                <a href="https://www.facebook.com/nikolovaa2" target="_blank" class="facebook"></a>
+                <a href="https://www.linkedin.com/in/nena-nikolova-368289315/" target="_blank" class="linkedin"></a>
+            </div>
+        </div>
+        <div class="container">
+
+        </div>
+    </div>
+</section>
+</body>
+<footer>
+    <p>&copy; 2024 My Personal Portfolio</p>
+</footer>
+<script type="module" src="index.js"></script>
+<script src="nena.js"></script>
+</html>

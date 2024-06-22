@@ -1,0 +1,396 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("assets/POZADINA.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: #333;
+    position: static;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+}
+header img{
+    width: 100px;
+    height: 54px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f02070; /* Change to deeppink on hover */
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+.home-content {
+    display: flex;
+    align-items: center;
+}
+.home-text h1{
+    font-family: "Playwrite NZ", cursive;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 64px;
+    color: #f02070;
+}
+.home-text p{
+    /*font-family: "Playwrite NZ", cursive;*/
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+    color: #f02070;
+    margin-top: -60px;
+}
+
+.btn{
+    position: relative;
+    top: 300px;
+    right: 210px;
+    border-radius: 12px;
+    background: linear-gradient(to right, #f02070, lightgoldenrodyellow);
+    padding: 5px;
+    border-color: snow;
+}
+.btn:hover{
+    border: 2px solid #f02070;
+}
+.btn a:hover{
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+}
+#home .home-content .home-image a:hover img{
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%) scale(1.1);
+}
+.home-text {
+    max-width: 50%;
+    z-index: 1;
+    color: white;
+    position: relative;
+    top: 193px;
+    left: 86px;
+}
+
+.home-image {
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    right: 30px;
+    padding-left: 10%;
+}
+.home-image img{
+    height: 90%;
+    position: absolute;
+    left: 60%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s, transform 0.3s ease-in-out;
+    width: 415px;
+}
+#krug{
+    width: 489px;
+    position: absolute;
+    top: 118px;
+    height: 491px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+}
+#naslovche{
+    font-family: "Playwrite NZ", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    float: left;
+    position: relative;
+    left: 13%;
+    top: 6px;
+    color: #f02070;
+    font-size: 20px;
+}
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #f02070; /* Change to deeppink on hover */
+    color: white;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.mainsection{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.education, .bio, .skill{
+    color: white;
+    height: 445px;
+    width: 340px;
+    background-color: rgba(0, 0, 0, 0.39);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3%;
+    border-radius: 25px;
+    padding: 2%;
+    text-align: center;
+}
+
+.education img {
+    color: #ffff;
+    width: 50px;
+    /*position: absolute;*/
+    right: 125%;
+    top: 18%;
+}
+.education #naslov > h2{
+    margin-bottom: -2px;
+}
+
+.bio {
+    height: 432px;
+    width: 340px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#naslov {
+    display: inline-block;
+    position: relative;
+    top: -3%;
+}
+
+
+body > div > div.skill > ul {
+    position: relative;
+    bottom: 30px;
+}
+
+body > header > nav {
+    display: inline-block;
+    position: relative;
+    left: 25%;
+}
+body > div > div.bio > img{
+    width: 324px;
+    height: 200px;
+    padding-top: 20px;
+    border-radius: 30px;
+}
+body > div > div.bio > div > img{
+    color: #ffff;
+    width: 50px;
+    /*position: absolute;*/
+    right: 125%;
+    top: 18%;
+}
+#naslov > img {
+    width: 45px;
+}
+
+body > div > div.skill > ul>li{
+    text-align: left;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+.drzava-1 {
+    display: flex;
+    align-items: flex-end;
+}
+
+.drzava-1 img {
+    width: 300px;
+    height: 400px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.drzava-1 img:hover {
+    height: 418px;
+    transition: 1s;
+}
+.drzava-2 img:hover {
+    height: 210px;
+    transition: 1s;
+    transform: scale(1.2); /* Adjust scale factor as needed */
+    /*z-index: 10; !* Ensure the hovered image appears above other elements *!*/
+}
+.drzava-3 img:hover {
+    height: 210px;
+    transition: 1s;
+    transform: scale(1.2); /* Adjust scale factor as needed */
+    /*z-index: 10; !* Ensure the hovered image appears above other elements *!*/
+}
+.drzava-4 img:hover {
+    height: 210px;
+    transition: 1s;
+    transform: scale(1.2); /* Adjust scale factor as needed */
+    /*z-index: 10; !* Ensure the hovered image appears above other elements *!*/
+}
+.drzava-5 img:hover {
+     height: 210px;
+     transition: 1s;
+     transform: scale(1.2); /* Adjust scale factor as needed */
+     /*z-index: 10; !* Ensure the hovered image appears above other elements *!*/
+ }
+
+.drzava-1 #name {
+    color: #fff;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    width: 260px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.drzava-2 #name, .drzava-3 #name, .drzava-4 #name, .drzava-5 #name{
+    color: #fff;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: -46px;
+    padding: 12px;
+    width: 276px;
+}
+
+body > div > div.drzava-1 > a:nth-child(3) {
+    text-decoration: none;
+    /*background-color: rgba(0, 0, 0, 0.9);*/
+    padding: 20px;
+    position: absolute;
+    left: 34%;
+
+}
+.drzava-2 #btn, .drzava-3 #btn, .drzava-4 #btn, .drzava-5 #btn{
+    position: relative;
+    left: 230px;
+    top: -34px;
+    border-radius: 20px;
+    border: solid #f02070;
+    padding: 5px;
+    transition: 1s;
+    text-decoration: none;
+    color: #ffffff;
+}
+.drzava-1 #btn{
+    border-radius: 20px;
+    border: solid #f02070;
+    padding: 5px;
+    transition: 1s;
+    color: #ffffff;
+}
+
+.drzava-1 #btn:hover{
+    color: #f02070; /* Change to deeppink on hover */
+    border: 0;
+    transition: 1s;
+}
+
+.drzava-2 #btn:hover{
+    color: #f02070; /* Change to deeppink on hover */
+    border: 0;
+    transition: 1s;
+}
+.drzava-3 #btn:hover{
+    color: #f02070; /* Change to deeppink on hover */
+    border: 0;
+    transition: 1s;
+}
+.drzava-4 #btn:hover{
+    color: #f02070; /* Change to deeppink on hover */
+    border: 0;
+    transition: 1s;
+}
+.drzava-5 #btn:hover{
+    color: #f02070; /* Change to deeppink on hover */
+    border: 0;
+    transition: 1s;
+}
+.drzava-2 img, .drzava-3 img, .drzava-4 img,.drzava-5 img {
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    border-radius: 20px;
+}
+body > div > div.second-places > div.drzava-2 a,.drzava-3 a,.drzava-4 a,.drzava-5 a{
+    text-decoration: none;
+}
+
+.second-places {
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    gap: 10px;
+}
+
+.main-section {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+.contact-section{
+    display: flex;
+}
